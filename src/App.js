@@ -4,6 +4,7 @@ import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import {Routes, Route} from "react-router-dom";
 import Header from "./components/header/header.component";
+import AuthPage from "./pages/auth/auth.component";
 
 const HatsPage = () => (
     <div>
@@ -20,6 +21,7 @@ class App extends Component {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/hats" element={<HatsPage />} />
                     <Route path="/shop" element={<ShopPage />} />
+                    <Route path="/signin" element={<AuthPage />} />
                 </Routes>
             </div>
         );
